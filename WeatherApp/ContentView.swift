@@ -13,23 +13,21 @@ struct ContentView: View {
         
         //BackgroundView
         ZStack {
-            BackgroundView(topColor: .blue, bottomColor: .white)
+            BackgroundView(topColor: .blue, bottomColor: Color("Color.Blue"))
             VStack {
                 Spacer()
                 
                 //LabelView
                 LabelView(label: "Cupertino, CA")
-                Spacer()
                 
                 //ImageView
                 ImageView(image: "cloud.sun.fill")
-                
+              
                 //TempView
                 TempView(temp: "76")
                 Spacer()
-                
                 //WeatherOfWeek
-                HStack(spacing: 10) {
+                HStack(spacing: 20) {
                     WeatherOfWeek(text: "TUE", imageName: "cloud.sun.fill", temp: "70")
                     WeatherOfWeek(text: "TUE", imageName: "cloud.sun.fill", temp: "70")
                     WeatherOfWeek(text: "TUE", imageName: "cloud.sun.fill", temp: "70")
